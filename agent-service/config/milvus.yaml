@@ -1,0 +1,6 @@
+collection_name : health_knowledge
+uri : "http://localhost:19530"
+k : 3
+chunk_size : 1000
+chunk_overlap : 80
+separators : ["\n\n","\n",".","!","?","。","，","！","？"," ",""]

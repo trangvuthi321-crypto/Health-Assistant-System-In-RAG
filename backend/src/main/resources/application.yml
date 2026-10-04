@@ -1,0 +1,21 @@
+# mysql
+spring:
+  datasource:
+    #MySQL配置
+    driverClassName:  com.mysql.cj.jdbc.Driver
+    url: ${DB_URL:jdbc:mysql://localhost:3306/communitypension?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.community.bean
+server:
+  port: 9001
+
+# Python 检索问答微服务
+assistant:
+  base-url: ${ASSISTANT_BASE_URL:http://127.0.0.1:8000}
+  token: ${SERVICE_TOKEN:}
+  connect-timeout: 3000
+  read-timeout: 90000
