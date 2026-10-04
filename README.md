@@ -1,2 +1,2 @@
-# Health-Assistant-System-In-RAG
+# Health-Assistant-System-In-Agent
 基于 SpringBoot + Vue 的社区老人健康管理系统，集成基于向量检索的"健康助手"问答功能： 管理员把系统中的健康知识文章同步进向量库，用户在网页端即可就健康知识进行多轮问答，回答附带命中的参考文章来源。
